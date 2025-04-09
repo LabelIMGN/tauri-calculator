@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/src/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tauri Calculator</title>
     <script type="module" src="/src/main.js" defer></script>
@@ -13,26 +14,26 @@
       <input id="display" readonly>
       <div id="keys">
         <button onclick="clearDisplay()" class="clear-btn">C</button>
-        <button onclick="appendToDisplay('()')" class="operator-btn">( )</button>
-        <button onclick="appendToDisplay('%')" class="operator-btn">&percnt;</button>
-        <button onclick="appendToDisplay('/')" class="operator-btn">&divide;</button>
+        <button onclick="appendToDisplay('()')" class="parentheses-btn">( )</button>
+        <button onclick="appendToDisplay('&percnt;')" class="operator-btn">&percnt;</button>
+        <button onclick="appendToDisplay('&divide;')" class="operator-btn">&divide;</button>
 
         <button onclick="appendToDisplay('7')">7</button>
         <button onclick="appendToDisplay('8')">8</button>
         <button onclick="appendToDisplay('9')">9</button>
-        <button onclick="appendToDisplay('*')" class="operator-btn">&times;</button>
+        <button onclick="appendToDisplay('&times;')" class="operator-btn">&times;</button>
 
         <button onclick="appendToDisplay('4')">4</button>
         <button onclick="appendToDisplay('5')">5</button>
         <button onclick="appendToDisplay('6')">6</button>
-        <button onclick="appendToDisplay('-')" class="operator-btn">&minus;</button>
+        <button onclick="appendToDisplay('&minus;')" class="operator-btn">&minus;</button>
 
         <button onclick="appendToDisplay('1')">1</button>
         <button onclick="appendToDisplay('2')">2</button>
         <button onclick="appendToDisplay('3')">3</button>
-        <button onclick="appendToDisplay('+')" class="operator-btn">&plus;</button>
+        <button onclick="appendToDisplay('&plus;')" class="operator-btn">&plus;</button>
 
-        <button onclick="appendToDisplay('+/-')">&plus;/&minus;</button>
+        <button onclick="appendToDisplay('+/-')" class="sign-btn">&plus;/&minus;</button>
         <button onclick="appendToDisplay('0')">0</button>
         <button onclick="appendToDisplay('.')">.</button>
         <button onclick="calculate()" class="equals-btn">&equals;</button>

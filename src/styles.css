@@ -1,8 +1,3 @@
-@font-face{
-  font-family:'digital-7';
-  src: url('src/fonts/digital-7.ttf');
-}
-
 body{
   margin: 0;
   display: flex;
@@ -14,11 +9,12 @@ body{
 
 #display{
   width: 100%;
-  padding: 20px;
-  font-size: 5rem;
-  font-family: Arial, sans-serif;
+  padding: 40px;
+  font-size: 4rem;
+  font-family: 'Orbitron', monospace;
   background-color:hsl(0, 0%, 20%);
-  text-align: right;
+  color: white;
+  text-align: left;
   border: none;
 }
 
@@ -60,6 +56,11 @@ button:active{
   font-weight: bold;
 }
 
+.parentheses-btn{
+  color: lightskyblue;
+  font-weight: bold;
+}
+
 .clear-btn{
   color: tomato;
   font-weight: bold;
@@ -70,6 +71,3 @@ button:active{
   background-color: lightskyblue;
   font-weight: bold;
 }
-
-
-
